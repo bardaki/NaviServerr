@@ -15,6 +15,7 @@ namespace WebApi.Models
 
         public Navigation()
         {
+            s
         }
 
         public Navigation(String id, String startAdd, List<String> addresses, String endAdd)
