@@ -15,7 +15,7 @@ namespace WebApi.Controllers
         private Navigation nav = new Navigation();
         private int minTimeIndex = 0;
 
-        
+        [AcceptVerbs("GET", "POST")]
         public List<Route> Get(Navigation navigation)//Navigation navigation
         {
             nav = navigation;
