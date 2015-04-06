@@ -21,6 +21,8 @@ namespace WebApi.Models
         public int duration;
         [DataMember]
         public String durationText;
+        //[DataMember]
+        //private TimeSpan lastTimeToArrive;
 
         public Route(String source, String destination, String duration, String durationText) //, int endLatitude, int endLongitude
         {

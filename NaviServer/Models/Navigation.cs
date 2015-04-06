@@ -7,18 +7,16 @@ namespace WebApi.Models
 {
     public class Navigation
     {
-        private String id;
-        private String startAdd ;
-        private List<String> addresses = new List<string>();
-        private String endAdd;
-
+        public String id { get; set; }
+        public String startAdd { get; set; }
+        public List<String> addresses { get; set; }
+        public String endAdd { get; set; }
 
         public Navigation()
         {
-            s
         }
 
-        public Navigation(String id, String startAdd, List<String> addresses, String endAdd)
+        public Navigation(String id, String startAdd, List<string> addresses, String endAdd)
         {
             this.id = id;
             this.startAdd = startAdd;
@@ -51,7 +49,7 @@ namespace WebApi.Models
             return endAdd;
         }
 
-        public List<String> getAddresses()
+        public List<string> getAddresses()
         {
             return addresses;
         }

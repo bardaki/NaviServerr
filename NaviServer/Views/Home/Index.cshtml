@@ -42,4 +42,30 @@
             </li>
         </ol>
     </section>
+    <input type="button" onclick="get()" value="aaa"/>
+    <script>
+        function get() {
+            var js = { "addresses" : [ "" ], "endAdd" : "", "id" : "cf0637f5-2932-4b18-8416-62f354a4fd81", "startAdd" : "שבילי גולן,כוכב יאיר,ישראל" };
+            
+           // $.get('api/Navigation/Get?', { "addresses": [""], "endAdd": "", "id": "cf0637f5-2932-4b18-8416-62f354a4fd81", "startAdd": "שבילי גולן,כוכב יאיר,ישראל" });
+            //$.get('api/Navigation/Get?', js);
+            $.post('api/Navigation/Complex', { "addresses": [""], "endAdd": "", "id": "cf0637f5-2932-4b18-8416-62f354a4fd81", "startAdd": "שבילי גולן,כוכב יאיר,ישראל" });
+            //$.ajax({
+            //    type: "POST",
+            //    url: "api/Navigation/Get",
+            //    data: js,
+            //    contentType: "application/json; charset=utf-8",
+            //    dataType: "json",
+            //    async: true,
+            //    cache: false,
+            //    success: function (ret) {
+            //        s = ret.d;
+            //        dos(s, 0);
+            //    },
+            //    error: function (x, e) {
+            //        alert("error occur");
+            //    }
+            //});
+    }
+    </script>
 </div>
